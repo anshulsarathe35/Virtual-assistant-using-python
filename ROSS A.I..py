@@ -1,3 +1,5 @@
+#importing the modules required.
+
 import pyttsx3
 import datetime
 import wikipedia
@@ -6,7 +8,7 @@ import webbrowser
 from googlesearch import *
 import speech_recognition as sr
 
-
+#making a function for voice.
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice',voices[0].id)
@@ -17,7 +19,7 @@ def speak(audio):
     engine.say(audio)
     engine.runAndWait()
 
-
+#loop for the password.
 while True:
     speak("please enter the correct password, to get access to ross")
     password = input("password: ")
@@ -32,7 +34,7 @@ while True:
     
 
 
-    
+#function , according to this A.I wishes you.   
 def wishMe():
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour<12:
@@ -44,6 +46,7 @@ def wishMe():
     else:
         speak("good evening sir")
     speak("i am ross an Artificial intelligence made by <|name|>. please tell me how may i help you")
+    
 def takeCommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -66,7 +69,7 @@ def takeCommand():
     return query
     
     
-    
+#main function for query.    
 if __name__ == "__main__":
     wishMe()
     while True:
