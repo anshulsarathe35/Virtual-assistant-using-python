@@ -139,13 +139,6 @@ if __name__ == "__main__":
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             print("the time is:",strTime)
             speak(f"sir, the time is {strTime}")
-            
-
-        elif "teamviewer" in query:
-            speak("opening teamviewer")
-            print("opening teamviewer")
-            teamPath = "C:\\Program Files (x86)\\TeamViewer\\TeamViewer.exe"
-            os.startfile(teamPath)
 
         elif "chrome" in query:
             speak("opening chrome")
