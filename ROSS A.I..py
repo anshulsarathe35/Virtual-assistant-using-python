@@ -214,21 +214,19 @@ if __name__ == "__main__":
                 speak("searching google...........")
                 speak(google_search)
                 print(google_search)
-
-            
-
-
         
         elif "exit" in query:
             speak("exiting ross")
             print("exiting ross")
             break
-
-
+            
         elif "shut down" in query:
-            speak("shuting down ross")
-            print("shuting down ross")
+            speak("shutting down ross")
+            print("shutting down ross")
             break
+
+
+        
             
             
             
