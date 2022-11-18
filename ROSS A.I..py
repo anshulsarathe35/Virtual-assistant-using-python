@@ -8,6 +8,7 @@ import webbrowser
 from googlesearch import *
 import speech_recognition as sr
 
+
 #making a function for voice.
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
