@@ -191,7 +191,7 @@ if __name__ == "__main__":
                 webbrowser.open("https://gaana.com/search?q=%s" % query)
                 speak("searching gaana...........")
                 speak(gaana_search)
-                print(gaana_search)
+                print(gaana_search) 
 
 
         elif "images of" in query:
