@@ -2,7 +2,7 @@
 
 import pyttsx3
 import datetime
-import wikipedia
+import wikipedia 
 import os
 import webbrowser
 from googlesearch import *
